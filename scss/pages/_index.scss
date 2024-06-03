@@ -1,0 +1,41 @@
+.container {
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 310px;
+    width: 100%;
+    border: solid 2px red;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    color: #000;
+    font-family: "Kaisei Decol", serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .wrapper-1{
+    display: flex;
+    border: 3px solid purple;
+  }
+}
+
+.header {
+  margin-top: 48px;
+  display: flex;
+}
+
+.fa-suitcase-rolling {
+  font-size: 40px;
+}
