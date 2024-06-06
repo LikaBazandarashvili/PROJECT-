@@ -393,7 +393,7 @@ a {
   margin-bottom: 80px;
 }
 .locations .card1 .image {
-  background-image: url("../../images/location2.png");
+  background-image: url("../images/location2.png");
   background-size: cover;
   width: 342px;
   height: 342px;
