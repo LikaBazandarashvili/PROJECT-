@@ -1,41 +1,327 @@
 .container {
-  max-width: 1220px;
-  width: 100%;
+  max-width: 1150px;
+  width: 95%;
   margin: 0 auto;
+  // @media (max-width: 1183px) {
+  //   width: 90%;
+  // }
 
-  .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 310px;
+  header {
+    max-width: 1150px;
     width: 100%;
-    border: solid 2px red;
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // border: solid 2px red;
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      max-width: 310px;
+      width: 100%;
+      // border: solid 2px red;
+
+      @media (max-width: 460px) {
+        width: 60%;
+      }
+
+      .fa-suitcase-rolling {
+        font-size: 40px;
+        @media (max-width: 460px) {
+          font-size: 30px;
+        }
+      }
+
+      h2 {
+        font-size: 40px;
+
+        @media (max-width: 460px) {
+          font-size: 30px;
+        }
+      }
+
+      h3 {
+        color: #000;
+        font-family: "Kaisei Decol", serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        @media (max-width: 460px) {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .wrapper-1 {
+      display: flex;
+      align-items: center;
+      // border: 3px solid purple;
+      justify-content: space-between;
+      max-width: 600px;
+      width: 100%;
+
+      @media (max-width: 995px) {
+        display: none;
+      }
+
+      nav {
+        max-width: 320px;
+        width: 100%;
+
+        ul {
+          display: flex;
+          align-items: center;
+          // border: 3px solid purple;
+          justify-content: space-between;
+        }
+      }
+
+      a {
+        color: #000;
+        font-family: "Nanum Myeongjo", serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
   }
 
-  h2 {
+  input[type="text"] {
+    width: 188px;
+    height: 21px;
+    border: none;
+    border-radius: 40px;
+    background: rgba(217, 217, 217, 0.5);
+  }
+
+  .fa-search {
+    font-size: 17px;
+  }
+
+  .submit {
+    border: none;
+    background-color: white;
+  }
+}
+
+.icon {
+  display: none;
+  @media (max-width: 995px) {
+    display: block;
+  }
+
+  .fa-bars {
     font-size: 40px;
+
+    @media (max-width: 460px) {
+      font-size: 26px;
+    }
+  }
+}
+
+// s-1
+
+.background {
+  background-image: url("../images/background.jpg");
+  max-width: 1439px;
+  width: 100%;
+  height: 615px;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #e67451;
+  margin-top: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    max-width: 684px;
+    width: 100%;
+    height: 152px;
+    flex-shrink: 0;
+    color: #fcc9b9;
+    text-align: center;
+    font-family: "Judson", serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    @media (max-width: 700px) {
+      font-size: 50px;
+    }
+
+    @media (max-width: 487px) {
+      font-size: 35px;
+    }
+
+    @media (max-width: 350px) {
+      font-size: 30px;
+    }
+  }
+}
+
+// s-2
+
+.line {
+  margin-top: 98px;
+  margin-bottom: 102px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 375px) {
+    margin-top: 42px;
+    margin-bottom: 35px;
   }
 
+  img {
+    width: 253px;
+    height: 1px;
+    flex-shrink: 0;
+
+    @media (max-width: 875px) {
+      width: 180px;
+    }
+
+    @media (max-width: 670px) {
+      width: 100px;
+    }
+
+    @media (max-width: 520px) {
+      width: 80px;
+    }
+
+    @media (max-width: 391px) {
+      width: 50px;
+    }
+  }
   h3 {
     color: #000;
     font-family: "Kaisei Decol", serif;
-    font-size: 32px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-  }
+    text-transform: uppercase;
 
-  .wrapper-1{
-    display: flex;
-    border: 3px solid purple;
+    @include responsive1;
   }
 }
 
-header {
-  margin-top: 48px;
+.locations {
   display: flex;
+  justify-content: space-around;
+
+  @media (max-width: 560px) {
+    flex-direction: column;
+  }
+
+  .card {
+    @include card;
+    .image {
+      background-image: url("../images/location1.jpg");
+      background-size: cover;
+      width: 342px;
+      height: 342px;
+
+      @include responsive;
+    }
+    h3 {
+      @include h;
+      font-family: "Kaisei Decol", serif;
+    }
+    h4 {
+      @include h;
+      font-family: "Noto Sans Georgian", sans-serif;
+      margin: 27px 0px 10px 0px;
+    }
+  }
+
+  .card1 {
+    @include card;
+
+    .image {
+      background-image: url("../../images/location2.png");
+      background-size: cover;
+      width: 342px;
+      height: 342px;
+
+      @include responsive;
+    }
+
+    h3 {
+      @include h;
+      font-family: "Kaisei Decol", serif;
+    }
+    h4 {
+      @include h;
+      font-family: "Noto Sans Georgian", sans-serif;
+      margin: 27px 0px 10px 0px;
+    }
+  }
+
+  .card2 {
+    @include card;
+
+    .image {
+      background-image: url("../images/location3.jpg");
+      background-size: cover;
+      width: 342px;
+      height: 342px;
+
+      @include responsive;
+    }
+
+    h3 {
+      @include h;
+      font-family: "Kaisei Decol", serif;
+    }
+    h4 {
+      @include h;
+      font-family: "Noto Sans Georgian", sans-serif;
+      margin: 27px 0px 10px 0px;
+    }
+  }
 }
 
-.fa-suitcase-rolling {
-  font-size: 40px;
+.div1 {
+  display: flex;
+  justify-content: center;
+
+  .botton {
+    width: 235px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: rgba(11, 37, 56, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 375px) {
+      width: 98px;
+      height: 28px;
+    }
+
+    a {
+      color: #fff;
+      font-family: "Nanum Myeongjo", serif;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      @media (max-width: 375px) {
+        font-size: 16px;
+      }
+    }
+  }
 }

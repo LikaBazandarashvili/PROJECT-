@@ -61,22 +61,47 @@ a {
 }
 
 .container {
-  max-width: 1220px;
-  width: 100%;
+  max-width: 1150px;
+  width: 95%;
   margin: 0 auto;
 }
-.container .wrapper {
+.container header {
+  max-width: 1150px;
+  width: 100%;
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container header .wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 310px;
   width: 100%;
-  border: solid 2px red;
 }
-.container h2 {
+@media (max-width: 460px) {
+  .container header .wrapper {
+    width: 60%;
+  }
+}
+.container header .wrapper .fa-suitcase-rolling {
   font-size: 40px;
 }
-.container h3 {
+@media (max-width: 460px) {
+  .container header .wrapper .fa-suitcase-rolling {
+    font-size: 30px;
+  }
+}
+.container header .wrapper h2 {
+  font-size: 40px;
+}
+@media (max-width: 460px) {
+  .container header .wrapper h2 {
+    font-size: 30px;
+  }
+}
+.container header .wrapper h3 {
   color: #000;
   font-family: "Kaisei Decol", serif;
   font-size: 32px;
@@ -84,16 +109,504 @@ a {
   font-weight: 400;
   line-height: normal;
 }
-.container .wrapper-1 {
+@media (max-width: 460px) {
+  .container header .wrapper h3 {
+    font-size: 16px;
+  }
+}
+.container header .wrapper-1 {
   display: flex;
-  border: 3px solid purple;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 600px;
+  width: 100%;
+}
+@media (max-width: 995px) {
+  .container header .wrapper-1 {
+    display: none;
+  }
+}
+.container header .wrapper-1 nav {
+  max-width: 320px;
+  width: 100%;
+}
+.container header .wrapper-1 nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container header .wrapper-1 a {
+  color: #000;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.container input[type=text] {
+  width: 188px;
+  height: 21px;
+  border: none;
+  border-radius: 40px;
+  background: rgba(217, 217, 217, 0.5);
+}
+.container .fa-search {
+  font-size: 17px;
+}
+.container .submit {
+  border: none;
+  background-color: white;
 }
 
-header {
-  margin-top: 48px;
-  display: flex;
+.icon {
+  display: none;
 }
-
-.fa-suitcase-rolling {
+@media (max-width: 995px) {
+  .icon {
+    display: block;
+  }
+}
+.icon .fa-bars {
   font-size: 40px;
+}
+@media (max-width: 460px) {
+  .icon .fa-bars {
+    font-size: 26px;
+  }
+}
+
+.background {
+  background-image: url("../images/background.jpg");
+  max-width: 1439px;
+  width: 100%;
+  height: 615px;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #e67451;
+  margin-top: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background h1 {
+  max-width: 684px;
+  width: 100%;
+  height: 152px;
+  flex-shrink: 0;
+  color: #fcc9b9;
+  text-align: center;
+  font-family: "Judson", serif;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media (max-width: 700px) {
+  .background h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 487px) {
+  .background h1 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 350px) {
+  .background h1 {
+    font-size: 30px;
+  }
+}
+
+.line {
+  margin-top: 98px;
+  margin-bottom: 102px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 375px) {
+  .line {
+    margin-top: 42px;
+    margin-bottom: 35px;
+  }
+}
+.line img {
+  width: 253px;
+  height: 1px;
+  flex-shrink: 0;
+}
+@media (max-width: 875px) {
+  .line img {
+    width: 180px;
+  }
+}
+@media (max-width: 670px) {
+  .line img {
+    width: 100px;
+  }
+}
+@media (max-width: 520px) {
+  .line img {
+    width: 80px;
+  }
+}
+@media (max-width: 391px) {
+  .line img {
+    width: 50px;
+  }
+}
+.line h3 {
+  color: #000;
+  font-family: "Kaisei Decol", serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+@media (max-width: 875px) {
+  .line h3 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 670px) {
+  .line h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .line h3 {
+    font-size: 14px;
+  }
+}
+
+.locations {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 560px) {
+  .locations {
+    flex-direction: column;
+  }
+}
+.locations .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.locations .card .image {
+  background-image: url("../images/location1.jpg");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .locations .card .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .locations .card .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .locations .card .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .locations .card .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .locations .card .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .locations .card .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.locations .card h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .locations .card h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations .card h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations .card h3 {
+    font-size: 17px;
+  }
+}
+.locations .card h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin: 27px 0px 10px 0px;
+}
+@media (max-width: 900px) {
+  .locations .card h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations .card h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations .card h4 {
+    font-size: 17px;
+  }
+}
+.locations .card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.locations .card1 .image {
+  background-image: url("../../images/location2.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .locations .card1 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .locations .card1 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .locations .card1 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .locations .card1 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .locations .card1 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .locations .card1 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.locations .card1 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .locations .card1 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations .card1 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations .card1 h3 {
+    font-size: 17px;
+  }
+}
+.locations .card1 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin: 27px 0px 10px 0px;
+}
+@media (max-width: 900px) {
+  .locations .card1 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations .card1 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations .card1 h4 {
+    font-size: 17px;
+  }
+}
+.locations .card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.locations .card2 .image {
+  background-image: url("../images/location3.jpg");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .locations .card2 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .locations .card2 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .locations .card2 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .locations .card2 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .locations .card2 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .locations .card2 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.locations .card2 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .locations .card2 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations .card2 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations .card2 h3 {
+    font-size: 17px;
+  }
+}
+.locations .card2 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin: 27px 0px 10px 0px;
+}
+@media (max-width: 900px) {
+  .locations .card2 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations .card2 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations .card2 h4 {
+    font-size: 17px;
+  }
+}
+
+.div1 {
+  display: flex;
+  justify-content: center;
+}
+.div1 .botton {
+  width: 235px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: rgba(11, 37, 56, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 375px) {
+  .div1 .botton {
+    width: 98px;
+    height: 28px;
+  }
+}
+.div1 .botton a {
+  color: #fff;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 375px) {
+  .div1 .botton a {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=global.css.map */
