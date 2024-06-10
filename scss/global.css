@@ -177,7 +177,7 @@ a {
 }
 
 .background {
-  background-image: url("../../images/background.webp");
+  background-image: url("../images/background.webp");
   max-width: 1439px;
   width: 100%;
   height: 615px;
