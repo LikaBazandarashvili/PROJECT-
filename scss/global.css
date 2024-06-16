@@ -145,14 +145,19 @@ a {
 }
 .container input[type=text] {
   width: 188px;
-  height: 21px;
+  height: 30px;
   border: none;
   border-radius: 40px;
   background: rgba(217, 217, 217, 0.5);
-  padding-left: 11px;
+  padding: 5px 0px 4px 11px;
 }
 .container .fa-search {
   font-size: 17px;
+  color: #776f6f;
+  transition: 0.3s ease;
+}
+.container .fa-search:hover {
+  color: #000;
 }
 .container .submit {
   border: none;
@@ -266,6 +271,12 @@ a {
   flex-direction: column;
   align-items: center;
   margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.locations .card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 .locations .card .image {
   background-image: url("../images/location1.jpg");
@@ -315,6 +326,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 10px;
   font-family: "Kaisei Decol", serif;
 }
 @media (max-width: 900px) {
@@ -338,8 +350,9 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 10px;
   font-family: "Noto Sans Georgian", sans-serif;
-  margin: 27px 0px 10px 0px;
+  margin-top: 27px;
 }
 @media (max-width: 900px) {
   .locations .card h4 {
@@ -361,6 +374,12 @@ a {
   flex-direction: column;
   align-items: center;
   margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.locations .card1:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 .locations .card1 .image {
   background-image: url("../images/location2.png");
@@ -410,6 +429,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 10px;
   font-family: "Kaisei Decol", serif;
 }
 @media (max-width: 900px) {
@@ -433,6 +453,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 10px;
   font-family: "Noto Sans Georgian", sans-serif;
   margin: 27px 0px 10px 0px;
 }
@@ -456,6 +477,12 @@ a {
   flex-direction: column;
   align-items: center;
   margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.locations .card2:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 .locations .card2 .image {
   background-image: url("../images/location3.jpg");
@@ -505,6 +532,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 10px;
   font-family: "Kaisei Decol", serif;
 }
 @media (max-width: 900px) {
@@ -528,6 +556,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 10px;
   font-family: "Noto Sans Georgian", sans-serif;
   margin: 27px 0px 10px 0px;
 }
@@ -680,39 +709,4 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-
-footer {
-  max-width: 1440px;
-  width: 100%;
-  height: 430px;
-  flex-shrink: 0;
-  background: #e4e4e4;
-}
-footer .icon-div {
-  display: flex;
-  align-items: center;
-}
-footer .icon-div .fa-suitcase-rolling {
-  margin-top: 35px;
-  font-size: 40px;
-  margin-right: 6px;
-}
-footer .icon-div h3 {
-  color: #000;
-  font-family: "Kaisei Decol", serif;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-top: 40px;
-}
-footer h4 {
-  color: #000;
-  font-family: "Kameron", serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-top: 13px;
 }/*# sourceMappingURL=global.css.map */
