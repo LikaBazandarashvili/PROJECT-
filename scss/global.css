@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -266,15 +267,16 @@ a {
     flex-direction: column;
   }
 }
-.locations .card {
+.locations .card a {
   display: flex;
   flex-direction: column;
+  width: 342px;
   align-items: center;
   margin-bottom: 80px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.locations .card:hover {
+.locations .card a:hover {
   transform: scale(1.1);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -369,15 +371,16 @@ a {
     font-size: 17px;
   }
 }
-.locations .card1 {
+.locations .card1 a {
   display: flex;
   flex-direction: column;
+  width: 342px;
   align-items: center;
   margin-bottom: 80px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.locations .card1:hover {
+.locations .card1 a:hover {
   transform: scale(1.1);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -472,15 +475,16 @@ a {
     font-size: 17px;
   }
 }
-.locations .card2 {
+.locations .card2 a {
   display: flex;
   flex-direction: column;
+  width: 342px;
   align-items: center;
   margin-bottom: 80px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.locations .card2:hover {
+.locations .card2 a:hover {
   transform: scale(1.1);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -589,6 +593,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s ease;
+}
+.div1 .botton:hover {
+  background: rgba(1, 19, 32, 0.8);
 }
 @media (max-width: 375px) {
   .div1 .botton {
@@ -654,6 +662,9 @@ a {
   justify-content: center;
   margin-top: 27px;
 }
+.s-3 .botton2:hover {
+  background: #091822;
+}
 @media (max-width: 375px) {
   .s-3 .botton2 {
     width: 89px;
@@ -706,6 +717,2898 @@ a {
   color: #fff;
   font-family: "Karma", serif;
   font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+footer {
+  max-width: 1440px;
+  width: 100%;
+  height: 430px;
+  flex-shrink: 0;
+  background: #e4e4e4;
+}
+footer .footer-container {
+  max-width: 1250px;
+  width: 90%;
+  margin: 0 auto;
+}
+footer .footer-container .footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  footer .footer-container .footer-wrapper .footer-div1 {
+    width: 185px;
+  }
+}
+footer .footer-container .footer-wrapper .footer-div1 .footer-logo {
+  display: flex;
+  align-items: center;
+}
+footer .footer-container .footer-wrapper .footer-div1 .footer-logo .fa-suitcase-rolling {
+  font-size: 40px;
+  margin-top: 35px;
+}
+@media (max-width: 600px) {
+  footer .footer-container .footer-wrapper .footer-div1 .footer-logo .fa-suitcase-rolling {
+    font-size: 30px;
+  }
+}
+footer .footer-container .footer-wrapper .footer-div1 .footer-logo h3 {
+  color: #000;
+  font-family: "Kaisei Decol", serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 40px;
+  margin-left: 6px;
+}
+@media (max-width: 600px) {
+  footer .footer-container .footer-wrapper .footer-div1 .footer-logo h3 {
+    font-size: 13px;
+  }
+}
+footer .footer-container .footer-wrapper .footer-div1 h4 {
+  color: #000;
+  font-family: "Kameron", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 13px;
+  width: 304px;
+}
+@media (max-width: 600px) {
+  footer .footer-container .footer-wrapper .footer-div1 h4 {
+    font-size: 13px;
+  }
+}
+footer .footer-container .footer-wrapper .footer-div1 .footer-nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 44px;
+  height: 188px;
+}
+footer .footer-container .footer-wrapper .footer-div1 .footer-nav ul a {
+  color: #000;
+  font-family: "Kameron", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 600px) {
+  footer .footer-container .footer-wrapper .footer-div1 .footer-nav ul a {
+    font-size: 14px;
+  }
+}
+footer .footer-container .footer-wrapper .footer-div2 {
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  width: 100%;
+}
+@media (max-width: 1030px) {
+  footer .footer-container .footer-wrapper .footer-div2 {
+    display: none;
+  }
+}
+footer .footer-container .footer-wrapper .footer-div2 .help,
+footer .footer-container .footer-wrapper .footer-div2 .Contact {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-container .footer-wrapper .footer-div2 .help h3,
+footer .footer-container .footer-wrapper .footer-div2 .Contact h3 {
+  color: #000;
+  font-family: "Kaushan Script";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .footer-container .footer-wrapper .footer-div2 .help h4,
+footer .footer-container .footer-wrapper .footer-div2 .Contact h4 {
+  width: 173.003px;
+  height: 1px;
+  background: #000;
+}
+footer .footer-container .footer-wrapper .footer-div2 .help div,
+footer .footer-container .footer-wrapper .footer-div2 .Contact div {
+  margin-top: 32.5px;
+  display: flex;
+  height: 106px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .footer-container .footer-wrapper .footer-div2 .help a,
+footer .footer-container .footer-wrapper .footer-div2 .Contact a {
+  color: #000;
+  font-family: "Kameron", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .footer-container .footer-div3 {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  height: 28px;
+  margin-top: 47px;
+}
+footer .footer-container .footer-div3 .fa-facebook,
+footer .footer-container .footer-div3 .fa-instagram,
+footer .footer-container .footer-div3 .fa-twitter {
+  color: #000;
+  font-size: 30px;
+}
+@media (max-width: 600px) {
+  footer .footer-container .footer-div3 .fa-facebook,
+  footer .footer-container .footer-div3 .fa-instagram,
+  footer .footer-container .footer-div3 .fa-twitter {
+    font-size: 20px;
+  }
+}
+footer .respontive {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+footer .footer-info {
+  display: flex;
+  align-items: center;
+  width: 314px;
+  margin-top: 32px;
+  justify-content: space-between;
+  position: absolute;
+  margin-top: 385px;
+}
+footer .footer-info .phone {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 135px;
+  width: 100%;
+}
+footer .footer-info .phone a {
+  color: #000;
+  font-family: "Kameron", serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 600px) {
+  footer .footer-info .phone a {
+    font-size: 14px;
+  }
+}
+footer .footer-info .location {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 160px;
+  width: 100%;
+}
+footer .footer-info .location p {
+  color: #000;
+  font-family: "Kameron", serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 600px) {
+  footer .footer-info .location p {
+    font-size: 14px;
+  }
+}
+
+.location-background {
+  background-image: url("../images/LocationBackground.WEBP");
+  background-color: rgb(13, 53, 3);
+  background-position: center;
+  background-size: cover;
+  max-width: 1442px;
+  width: 100%;
+  height: 601px;
+  flex-shrink: 0;
+  margin-top: 34px;
+}
+
+.location-section2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.card3 a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card3 a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card3 .image {
+  background-image: url("../images/location4.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .card3 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .card3 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .card3 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .card3 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .card3 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .card3 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.card3 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .card3 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .card3 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .card3 h3 {
+    font-size: 17px;
+  }
+}
+.card3 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .card3 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .card3 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .card3 h4 {
+    font-size: 17px;
+  }
+}
+
+.card4 a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card4 a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card4 .image {
+  background-image: url("../images/location5.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .card4 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .card4 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .card4 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .card4 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .card4 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .card4 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.card4 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .card4 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .card4 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .card4 h3 {
+    font-size: 17px;
+  }
+}
+.card4 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .card4 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .card4 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .card4 h4 {
+    font-size: 17px;
+  }
+}
+
+.card5 a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card5 a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card5 .image {
+  background-image: url("../images/სვეტიცხოველი.jpg");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .card5 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .card5 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .card5 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .card5 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .card5 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .card5 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.card5 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .card5 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .card5 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .card5 h3 {
+    font-size: 17px;
+  }
+}
+.card5 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .card5 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .card5 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .card5 h4 {
+    font-size: 17px;
+  }
+}
+
+.location {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 560px) {
+  .location {
+    flex-direction: column;
+  }
+}
+
+.card6 a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card6 a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card6 .image {
+  background-image: url("../images/location8.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .card6 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .card6 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .card6 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .card6 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .card6 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .card6 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.card6 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .card6 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .card6 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .card6 h3 {
+    font-size: 17px;
+  }
+}
+.card6 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .card6 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .card6 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .card6 h4 {
+    font-size: 17px;
+  }
+}
+
+.card7 a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card7 a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card7 .image {
+  background-image: url("../images/location7.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .card7 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .card7 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .card7 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .card7 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .card7 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .card7 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.card7 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .card7 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .card7 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .card7 h3 {
+    font-size: 17px;
+  }
+}
+.card7 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .card7 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .card7 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .card7 h4 {
+    font-size: 17px;
+  }
+}
+
+.card8 a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card8 a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card8 .image {
+  background-image: url("../images/location9.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .card8 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .card8 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .card8 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .card8 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .card8 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .card8 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.card8 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .card8 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .card8 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .card8 h3 {
+    font-size: 17px;
+  }
+}
+.card8 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .card8 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .card8 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .card8 h4 {
+    font-size: 17px;
+  }
+}
+
+.location-section3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 190px;
+}
+.location-section3 .wrapper {
+  display: flex;
+  width: 136px;
+  justify-content: space-between;
+}
+.location-section3 .wrapper .icon1 {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3 ease;
+}
+.location-section3 .wrapper .icon1:hover {
+  background: #acacac;
+}
+.location-section3 .wrapper .icon2 {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background: rgba(217, 217, 217, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3 ease;
+}
+.location-section3 .wrapper .icon2:hover {
+  background: rgba(189, 187, 187, 0.5);
+}
+.location-section3 .wrapper .icon2 h5 {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.locations2 {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 560px) {
+  .locations2 {
+    flex-direction: column;
+  }
+}
+.locations2 .card a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.locations2 .card a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.locations2 .card .image {
+  background-image: url("../images/location10.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .locations2 .card .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .locations2 .card .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .locations2 .card .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .locations2 .card .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .locations2 .card .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.locations2 .card h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .locations2 .card h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations2 .card h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card h3 {
+    font-size: 17px;
+  }
+}
+.locations2 .card h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .locations2 .card h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations2 .card h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card h4 {
+    font-size: 17px;
+  }
+}
+.locations2 .card1 a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.locations2 .card1 a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.locations2 .card1 .image {
+  background-image: url("../images/location11.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .locations2 .card1 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .locations2 .card1 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .locations2 .card1 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .locations2 .card1 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card1 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .locations2 .card1 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.locations2 .card1 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .locations2 .card1 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations2 .card1 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card1 h3 {
+    font-size: 17px;
+  }
+}
+.locations2 .card1 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .locations2 .card1 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations2 .card1 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card1 h4 {
+    font-size: 17px;
+  }
+}
+.locations2 .card2 a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.locations2 .card2 a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.locations2 .card2 .image {
+  background-image: url("../images/location12.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .locations2 .card2 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .locations2 .card2 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .locations2 .card2 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .locations2 .card2 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card2 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .locations2 .card2 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.locations2 .card2 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .locations2 .card2 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations2 .card2 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card2 h3 {
+    font-size: 17px;
+  }
+}
+.locations2 .card2 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .locations2 .card2 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations2 .card2 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card2 h4 {
+    font-size: 17px;
+  }
+}
+.locations2 .card3 a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.locations2 .card3 a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.locations2 .card3 .image {
+  background-image: url("../images/location13.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .locations2 .card3 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .locations2 .card3 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .locations2 .card3 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .locations2 .card3 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card3 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .locations2 .card3 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.locations2 .card3 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .locations2 .card3 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations2 .card3 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card3 h3 {
+    font-size: 17px;
+  }
+}
+.locations2 .card3 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .locations2 .card3 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations2 .card3 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card3 h4 {
+    font-size: 17px;
+  }
+}
+.locations2 .card4 a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.locations2 .card4 a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.locations2 .card4 .image {
+  background-image: url("../images/location14.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .locations2 .card4 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .locations2 .card4 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .locations2 .card4 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .locations2 .card4 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card4 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .locations2 .card4 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.locations2 .card4 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .locations2 .card4 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations2 .card4 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card4 h3 {
+    font-size: 17px;
+  }
+}
+.locations2 .card4 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .locations2 .card4 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations2 .card4 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card4 h4 {
+    font-size: 17px;
+  }
+}
+.locations2 .card5 a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.locations2 .card5 a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.locations2 .card5 .image {
+  background-image: url("../images/location15.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .locations2 .card5 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .locations2 .card5 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .locations2 .card5 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .locations2 .card5 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card5 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .locations2 .card5 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.locations2 .card5 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .locations2 .card5 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations2 .card5 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card5 h3 {
+    font-size: 17px;
+  }
+}
+.locations2 .card5 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .locations2 .card5 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations2 .card5 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card5 h4 {
+    font-size: 17px;
+  }
+}
+.locations2 .card6 a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.locations2 .card6 a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.locations2 .card6 .image {
+  background-image: url("../images/location16.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .locations2 .card6 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .locations2 .card6 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .locations2 .card6 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .locations2 .card6 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card6 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .locations2 .card6 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.locations2 .card6 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .locations2 .card6 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations2 .card6 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card6 h3 {
+    font-size: 17px;
+  }
+}
+.locations2 .card6 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .locations2 .card6 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations2 .card6 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card6 h4 {
+    font-size: 17px;
+  }
+}
+.locations2 .card7 a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.locations2 .card7 a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.locations2 .card7 .image {
+  background-image: url("../images/location17.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .locations2 .card7 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .locations2 .card7 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .locations2 .card7 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .locations2 .card7 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card7 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .locations2 .card7 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.locations2 .card7 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .locations2 .card7 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations2 .card7 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card7 h3 {
+    font-size: 17px;
+  }
+}
+.locations2 .card7 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .locations2 .card7 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations2 .card7 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card7 h4 {
+    font-size: 17px;
+  }
+}
+.locations2 .card8 a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.locations2 .card8 a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.locations2 .card8 .image {
+  background-image: url("../images/location18.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .locations2 .card8 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .locations2 .card8 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .locations2 .card8 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .locations2 .card8 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card8 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .locations2 .card8 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.locations2 .card8 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .locations2 .card8 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations2 .card8 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card8 h3 {
+    font-size: 17px;
+  }
+}
+.locations2 .card8 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .locations2 .card8 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations2 .card8 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations2 .card8 h4 {
+    font-size: 17px;
+  }
+}
+
+.location2-section3 {
+  margin-bottom: 190px;
+  display: flex;
+  justify-content: center;
+}
+.location2-section3 .wrapper {
+  display: flex;
+  width: 136px;
+  justify-content: space-between;
+}
+.location2-section3 .wrapper .icon1 {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3 ease;
+}
+.location2-section3 .wrapper .icon1:hover {
+  background: #acacac;
+}
+.location2-section3 .wrapper .icon2 {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background: rgba(217, 217, 217, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3 ease;
+}
+.location2-section3 .wrapper .icon2:hover {
+  background: rgba(189, 187, 187, 0.5);
+}
+.location2-section3 .wrapper h5 {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.locations3 {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 560px) {
+  .locations3 {
+    flex-direction: column;
+  }
+}
+.locations3 .card a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.locations3 .card a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.locations3 .card .image {
+  background-image: url("../images/location19.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .locations3 .card .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .locations3 .card .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .locations3 .card .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .locations3 .card .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .locations3 .card .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.locations3 .card h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .locations3 .card h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations3 .card h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card h3 {
+    font-size: 17px;
+  }
+}
+.locations3 .card h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .locations3 .card h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations3 .card h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card h4 {
+    font-size: 17px;
+  }
+}
+.locations3 .card1 a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.locations3 .card1 a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.locations3 .card1 .image {
+  background-image: url("../images/location20.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .locations3 .card1 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .locations3 .card1 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .locations3 .card1 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .locations3 .card1 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card1 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .locations3 .card1 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.locations3 .card1 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .locations3 .card1 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations3 .card1 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card1 h3 {
+    font-size: 17px;
+  }
+}
+.locations3 .card1 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .locations3 .card1 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations3 .card1 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card1 h4 {
+    font-size: 17px;
+  }
+}
+.locations3 .card2 a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.locations3 .card2 a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.locations3 .card2 .image {
+  background-image: url("../images/location21.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .locations3 .card2 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .locations3 .card2 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .locations3 .card2 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .locations3 .card2 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card2 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .locations3 .card2 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.locations3 .card2 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .locations3 .card2 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations3 .card2 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card2 h3 {
+    font-size: 17px;
+  }
+}
+.locations3 .card2 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .locations3 .card2 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations3 .card2 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card2 h4 {
+    font-size: 17px;
+  }
+}
+.locations3 .card3 a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.locations3 .card3 a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.locations3 .card3 .image {
+  background-image: url("../images/location22.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .locations3 .card3 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .locations3 .card3 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .locations3 .card3 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .locations3 .card3 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card3 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .locations3 .card3 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.locations3 .card3 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .locations3 .card3 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations3 .card3 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card3 h3 {
+    font-size: 17px;
+  }
+}
+.locations3 .card3 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .locations3 .card3 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations3 .card3 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card3 h4 {
+    font-size: 17px;
+  }
+}
+.locations3 .card4 a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.locations3 .card4 a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.locations3 .card4 .image {
+  background-image: url("../images/location23.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .locations3 .card4 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .locations3 .card4 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .locations3 .card4 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .locations3 .card4 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card4 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .locations3 .card4 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.locations3 .card4 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .locations3 .card4 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations3 .card4 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card4 h3 {
+    font-size: 17px;
+  }
+}
+.locations3 .card4 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .locations3 .card4 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations3 .card4 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card4 h4 {
+    font-size: 17px;
+  }
+}
+.locations3 .card5 a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.locations3 .card5 a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.locations3 .card5 .image {
+  background-image: url("../images/location24.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .locations3 .card5 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .locations3 .card5 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .locations3 .card5 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .locations3 .card5 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card5 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .locations3 .card5 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.locations3 .card5 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .locations3 .card5 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations3 .card5 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card5 h3 {
+    font-size: 17px;
+  }
+}
+.locations3 .card5 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .locations3 .card5 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations3 .card5 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card5 h4 {
+    font-size: 17px;
+  }
+}
+.locations3 .card6 a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.locations3 .card6 a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.locations3 .card6 .image {
+  background-image: url("../images/location25.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .locations3 .card6 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .locations3 .card6 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .locations3 .card6 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .locations3 .card6 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card6 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .locations3 .card6 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.locations3 .card6 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .locations3 .card6 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations3 .card6 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card6 h3 {
+    font-size: 17px;
+  }
+}
+.locations3 .card6 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .locations3 .card6 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations3 .card6 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card6 h4 {
+    font-size: 17px;
+  }
+}
+.locations3 .card7 a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.locations3 .card7 a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.locations3 .card7 .image {
+  background-image: url("../images/location26.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .locations3 .card7 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .locations3 .card7 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .locations3 .card7 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .locations3 .card7 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card7 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .locations3 .card7 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.locations3 .card7 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .locations3 .card7 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations3 .card7 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card7 h3 {
+    font-size: 17px;
+  }
+}
+.locations3 .card7 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .locations3 .card7 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations3 .card7 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card7 h4 {
+    font-size: 17px;
+  }
+}
+.locations3 .card8 a {
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  align-items: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.locations3 .card8 a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.locations3 .card8 .image {
+  background-image: url("../images/location27.png");
+  background-size: cover;
+  width: 342px;
+  height: 342px;
+}
+@media (max-width: 1080px) {
+  .locations3 .card8 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 940px) {
+  .locations3 .card8 .image {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (max-width: 800px) {
+  .locations3 .card8 .image {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .locations3 .card8 .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card8 .image {
+    width: 342px;
+    height: 342px;
+  }
+}
+@media (max-width: 365px) {
+  .locations3 .card8 .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+.locations3 .card8 h3 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Kaisei Decol", serif;
+}
+@media (max-width: 900px) {
+  .locations3 .card8 h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations3 .card8 h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card8 h3 {
+    font-size: 17px;
+  }
+}
+.locations3 .card8 h4 {
+  color: #000;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  margin-top: 27px;
+}
+@media (max-width: 900px) {
+  .locations3 .card8 h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 620px) {
+  .locations3 .card8 h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 560px) {
+  .locations3 .card8 h4 {
+    font-size: 17px;
+  }
+}
+
+.location3-section3 {
+  margin-bottom: 190px;
+  display: flex;
+  justify-content: center;
+}
+.location3-section3 .wrapper {
+  display: flex;
+  width: 136px;
+  justify-content: space-between;
+}
+.location3-section3 .wrapper .icon1 {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3 ease;
+}
+.location3-section3 .wrapper .icon1:hover {
+  background: #acacac;
+}
+.location3-section3 .wrapper .icon2 {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background: rgba(217, 217, 217, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3 ease;
+}
+.location3-section3 .wrapper .icon2:hover {
+  background: rgba(189, 187, 187, 0.5);
+}
+.location3-section3 .wrapper h5 {
+  color: #000;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
